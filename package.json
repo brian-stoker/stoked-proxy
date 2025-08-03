@@ -1,0 +1,44 @@
+{
+  "name": "stoked-proxy",
+  "version": "0.0.1",
+  "description": "A CLI-capable HTTP/HTTPS reverse proxy with request/response monitoring",
+  "main": "dist/index.js",
+  "bin": {
+    "stoked-proxy": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "cli": "node bin/cli.js",
+    "test": "echo \"No tests specified yet\"",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "proxy",
+    "http",
+    "https",
+    "reverse-proxy",
+    "cli",
+    "monitoring"
+  ],
+  "author": "Stoked Consulting",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "ws": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md"
+  ]
+}
